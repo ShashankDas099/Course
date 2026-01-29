@@ -1,4 +1,4 @@
-class arithmeticoperations
+public class arithmeticoperations
 {
     public static void main(String[] args)
     {
