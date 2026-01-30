@@ -2,6 +2,11 @@ import java.util.Scanner;
 class human{
     private String name;
     private int age;
+
+    public human(){
+        name="john";
+        age= 13;
+    }
     public void setAge(int age){
         this.age=age;
     }
@@ -26,11 +31,6 @@ public class encap{
         h1.setName(scanner.next());
 
         human h2 = new human();
-        System.out.println("Enter Age: ");
-        h2.setAge(scanner.nextInt());
-        scanner.nextLine();
-        System.out.println("Enter Name: ");
-        h2.setName(scanner.next());
         System.out.println(h1.getAge()+":"+h1.getName());
         System.out.println(h2.getAge()+":"+h2.getName());
 
