@@ -1,11 +1,15 @@
 import java.util.Scanner;
 class human{
-    private String name;
+    private String name; //encapsulation
     private int age;
 
-    public human(){
+    public human(){ //default constructor
         name="john";
         age= 13;
+    }
+    public human(int age,String name){ //parametirzed constructor
+        this.age=age; //this keyword
+        this.name=name;
     }
     public void setAge(int age){
         this.age=age;
@@ -31,8 +35,10 @@ public class encap{
         h1.setName(scanner.next());
 
         human h2 = new human();
+        human h3 = new human(19,"Ananya");
         System.out.println(h1.getAge()+":"+h1.getName());
         System.out.println(h2.getAge()+":"+h2.getName());
+        System.out.println(h3.getAge()+":"+h3.getName());
 
     }
 }
